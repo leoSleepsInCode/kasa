@@ -1,14 +1,28 @@
+import { Link, useLocation } from "react-router-dom";
+import logo from "../../assets/logo.png";
 import "./navbar.css";
 
-// const Navbar = () => {
-//     return (
-//         // <nav>
-//         //     <img src={src} alt={alt} /> 
-//         // </nav>
+const Navbar = () => {
+  const location = useLocation();
+  const pathname = location.pathname;
 
-//         // <ul>
-            
-//         // </ul>
-//     )
-// }
+  return (
+    <nav>
+      <img src={logo} alt="logo kasa" />
+      <ul>
+        <li>
+          <Link to="/" className={pathname === "/" ? "active" : ""}>
+            Accueil
+          </Link>
+        </li>
+        <li>
+          <Link to="/about" className={pathname === "/about" ? "active" : ""}>
+            A propos
+          </Link>
+        </li>
+      </ul>
+    </nav>
+  )
+}
+
 export default Navbar;
