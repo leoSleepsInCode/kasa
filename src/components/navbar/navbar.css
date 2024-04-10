@@ -36,7 +36,8 @@ nav {
   }
 
   @media (min-width: 1200px) {
-    margin: 50px 100px;
+    max-width: 1240px;
+    margin: 50px auto;
     font-size: 1.5rem;
 
     img {
