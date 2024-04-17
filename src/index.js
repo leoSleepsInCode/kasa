@@ -6,10 +6,9 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Home from './pages/home/home';
 import Nav from './components/navbar/navbar';
 import Footer from './components/footer/footer';
+import Error from './pages/error/error';
 // import Housing from './pages/housing/housing';
 // import About from './pages/about/about';
-// import Error from './pages/error/error';
-//  
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -18,9 +17,10 @@ root.render(
       <Nav />
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="*" element={<Error />} /> 
         {/* <Route path="/housing/:id" element={<Housing />} />
         <Route path="/About" element={<About />} />
-        <Route path="*" element={<Error />} /> */}
+        */}
       </Routes>
       <Footer />
     </BrowserRouter>

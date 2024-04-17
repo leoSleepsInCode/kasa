@@ -1,0 +1,51 @@
+[id=error]{
+    --textcolor: hsl(0, 100%, 69%);
+
+    h1 {
+        margin-bottom: 70px;
+        text-align: center;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;
+        font-size: 6rem;
+        color: var(--textcolor);
+    }
+
+    p {
+        margin-bottom: 70px;
+        text-align: center;
+        font-size: 20px;
+        color: var(--textcolor);
+    }
+
+    a {
+        display: block;
+        margin-bottom: 100px;
+        text-align: center;
+        font-size: 20px;
+        text-decoration: underline;
+    }
+
+    a:hover {
+        color: #000;
+    }
+
+    @media (min-width: 768px) {
+
+        h1 {
+            margin-bottom: 100px;
+            font-size: 14rem;
+        }
+
+        p {
+            font-size: 30px;
+
+            .breaker {
+                display: none;
+            }
+        }
+
+        a {
+            margin-bottom: 200px;
+        }
+    }
+}
