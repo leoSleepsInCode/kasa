@@ -4,7 +4,7 @@ const Banner = () => {
 
     return (
         <header>
-            <h1>Chez vous, partout et ailleurs</h1>
+            <h1>Chez vous, < br className="break"/> partout et ailleurs</h1>
         </header>
     )
 }
