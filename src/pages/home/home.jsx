@@ -9,7 +9,6 @@ const Home = () => {
     return (
         <main id="home">
             <Banner />
-
             <ul>
                 {data.housing.map((  {id, cover, description, title} ) => (
                     <li key={id}>

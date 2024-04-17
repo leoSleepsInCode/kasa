@@ -22,6 +22,7 @@ nav {
   }
 
   @media (min-width: 768px) {
+    
     margin: 30px 60px;
     font-size: 1.2rem;
 
@@ -36,8 +37,7 @@ nav {
   }
 
   @media (min-width: 1200px) {
-    max-width: 1240px;
-    margin: 50px auto;
+
     font-size: 1.5rem;
 
     img {
