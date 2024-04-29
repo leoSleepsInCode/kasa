@@ -1,11 +1,11 @@
 import "./banner.css"
 
-const Banner = ({src, alt}) => {
+const Banner = ({src, alt, title=""}) => {
 
     return (
-        <header>
-            {/* <img src={src} alt={alt} /> */}
-            <h1>Chez vous, < br className="break"/> partout et ailleurs</h1>
+        <header className="banner">
+            <img src={src} alt={alt} />
+            {title && <h1>{title}</h1>}
         </header>
     )
 }

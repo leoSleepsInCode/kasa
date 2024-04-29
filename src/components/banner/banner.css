@@ -1,13 +1,8 @@
-header {
-    border : 1px solid #000;
-    border-radius: 10px;
-    background-color: rgb(0, 0, 0, 0.5);
-    background-image: url(../../assets/banner.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-blend-mode: multiply;
-    color: #FFF;
+.banner {
+
+    img {
+        
+    }
 
     h1 {
         padding: 10px 15px;

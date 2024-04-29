@@ -1,12 +1,12 @@
 import "./collapse.css";
 
-const Collapse = () => {
+const Collapse = ({title, content}) => {
 
     return (
-            <ul>
+            <ul className="collapse">
                 <li>
                     <h2>Fiabilité</h2>
-                    <p>Lorem ipsum dolor sit amet</p>
+                    <p>Lore m ipsum dolor sit amet</p>
                 </li>
                 <li>
                     <h2>Respect</h2>
